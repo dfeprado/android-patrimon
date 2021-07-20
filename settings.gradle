@@ -1,0 +1,3 @@
+include ':ViewUtils'
+include ':app'
+rootProject.name = "Patrimon"

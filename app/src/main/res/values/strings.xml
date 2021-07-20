@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Patrimon</string>
+    <string name="text_patrimonio">Patrimônio</string>
+    <string name="txt_porcentagem">Porcentagem desejada para o ativo</string>
+    <string name="btn_calculate">Calcular</string>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/text_patrimonio"
+        app:layout_constraintBottom_toTopOf="@+id/edit_equity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <dev.danielprado.viewutils.CurrencyEdit
+        android:id="@+id/edit_equity"
+        android:layout_width="258dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/txt_porcentagem"
+        app:layout_constraintBottom_toTopOf="@+id/edit_percentage"
+        app:layout_constraintEnd_toEndOf="@+id/edit_equity"
+        app:layout_constraintStart_toStartOf="@+id/edit_equity"
+        app:layout_constraintTop_toBottomOf="@+id/edit_equity" />
+
+    <dev.danielprado.viewutils.CurrencyEdit
+        android:id="@+id/edit_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btn_calculate"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btn_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="calculate"
+        android:text="@string/btn_calculate"
+        app:layout_constraintBottom_toTopOf="@+id/txt_result"
+        app:layout_constraintEnd_toEndOf="@+id/edit_percentage"
+        app:layout_constraintStart_toStartOf="@+id/edit_percentage"
+        app:layout_constraintTop_toBottomOf="@+id/edit_percentage" />
+
+    <TextView
+        android:id="@+id/txt_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_calculate"
+        tools:text="Resultado"
+        android:visibility="invisible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
