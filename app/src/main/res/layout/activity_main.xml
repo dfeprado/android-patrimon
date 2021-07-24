@@ -52,7 +52,7 @@
 
     <Button
         android:id="@+id/btn_calculate"
-        android:layout_width="347dp"
+        android:layout_width="match_parent"
         android:layout_height="73dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
