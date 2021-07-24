@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FormattedNumberEdit">
+        <attr name="symbol" format="string"/>
+        <attr name="symbol_position" format="integer">
+            <enum name="prefix" value="0"/>
+            <enum name="suffix" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>
