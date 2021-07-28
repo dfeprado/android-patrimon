@@ -1,81 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <dev.danielprado.viewutils.FormattedNumberEdit
-        android:id="@+id/edit_equity"
+    <fragment
+        android:id="@+id/fragment_container"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="32dp"
-        android:ems="10"
-        android:hint="Patrimônio (R$)"
-        app:symbol_position="prefix"
-        app:symbol="R$ "
-        android:textAlignment="textEnd"
-        android:background="@drawable/edit_tint"
-        android:inputType="number"
-        android:digits="0123456789.,R$ "
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:paddingHorizontal="15dp"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <dev.danielprado.viewutils.FormattedNumberEdit
-        android:id="@+id/edit_percentage"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:ems="10"
-        android:textAlignment="textEnd"
-        app:symbol=" %"
-        app:symbol_position="suffix"
-        android:paddingHorizontal="15dp"
-        android:background="@drawable/edit_tint"
-        android:hint="Representatividade do ativo"
-        android:inputType="number"
-        android:digits="0123456789,.%"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_equity" />
-
-    <Button
-        android:id="@+id/btn_calculate"
-        android:layout_width="match_parent"
-        android:layout_height="73dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:onClick="calculate"
-        android:text="@string/btn_calculate"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_percentage" />
-
-    <TextView
-        android:id="@+id/txt_result"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:textSize="18sp"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_calculate"
-        tools:text="Resultado" />
-
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_main"
+        tools:layout_editor_absoluteX="270dp"
+        tools:layout_editor_absoluteY="203dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
