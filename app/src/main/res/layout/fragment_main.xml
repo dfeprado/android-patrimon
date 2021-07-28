@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="O que você deseja fazer?"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"/>
+
+    <Button
+        android:id="@+id/btn_value_by_desired_percentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular o valor de um novo ativo baseado num porcentual"
+        android:padding="10dp"
+        android:layout_marginHorizontal="10dp"/>
+
+    <Button
+        android:id="@+id/btn_weight_by_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular a representatividade de um novo ativo através do seu valor"
+        android:padding="10dp"
+        android:layout_marginHorizontal="10dp"/>
+</LinearLayout>
