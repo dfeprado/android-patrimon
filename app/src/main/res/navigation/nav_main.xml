@@ -18,9 +18,16 @@
         <action
             android:id="@+id/action_mainFragment_to_weightByValueFragment"
             app:destination="@id/weightByValueFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_diferencialValueFragment"
+            app:destination="@id/diferencialValueFragment" />
     </fragment>
     <fragment
         android:id="@+id/weightByValueFragment"
         android:name="dev.danielprado.patrimon.WeightByValueFragment"
         android:label="WeightByValueFragment" />
+    <fragment
+        android:id="@+id/diferencialValueFragment"
+        android:name="dev.danielprado.patrimon.DiferencialValueFragment"
+        android:label="DiferencialValueFragment" />
 </navigation>

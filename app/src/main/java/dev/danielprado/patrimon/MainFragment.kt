@@ -29,5 +29,9 @@ class MainFragment: Fragment() {
         layoutBinding.btnWeightByValue.setOnClickListener {
             navController.navigate(R.id.action_mainFragment_to_weightByValueFragment)
         }
+
+        layoutBinding.btnDiferencialValue.setOnClickListener {
+            navController.navigate(R.id.action_mainFragment_to_diferencialValueFragment)
+        }
     }
 }
