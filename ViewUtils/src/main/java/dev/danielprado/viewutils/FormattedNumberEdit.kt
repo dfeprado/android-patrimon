@@ -43,8 +43,8 @@ class FormattedNumberEdit(context: Context, attrs: AttributeSet) : AppCompatEdit
 
         context.theme.obtainStyledAttributes(attrs, R.styleable.FormattedNumberEdit, 0, 0).apply {
             try {
-                symbol = getString(R.styleable.FormattedNumberEdit_symbol) ?: ""
-                symbolPrefix = getInteger(R.styleable.FormattedNumberEdit_symbol_position, 0) == 0
+                symbol = getString(R.styleable.FormattedNumberEdit_formattingSymbol) ?: ""
+                symbolPrefix = getInteger(R.styleable.FormattedNumberEdit_formattingSymbolPosition, 0) == 0
             }
             finally {
                 recycle()

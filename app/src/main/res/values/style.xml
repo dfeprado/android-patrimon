@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:app="http://schemas.android.com/apk/res-auto">
+    <style name="FormattedEdit" parent="Widget.AppCompat.EditText">
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:textAlignment">viewEnd</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:inputType">number</item>
+        <item name="android:background">@drawable/edits_background</item>
+    </style>
+
+    <style name="FormattedEdit.Currency">
+        <item name="android:digits">0123456789R$,.\ </item>
+        <item name="formattingSymbol">R$\ </item>
+        <item name="formattingSymbolPosition">prefix</item>
+    </style>
+
+    <style name="FormattedEdit.Percentage">
+        <item name="android:digits">0123456789%.,</item>
+        <item name="formattingSymbol">%</item>
+        <item name="formattingSymbolPosition">suffix</item>
+    </style>
+
+    <style name="CustomButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:backgroundTint">?attr/colorPrimary</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:background">@drawable/button_background</item>
+    </style>
+</resources>

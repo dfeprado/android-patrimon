@@ -11,27 +11,27 @@
         android:layout_marginVertical="10dp"
         android:layout_marginHorizontal="10dp"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_value_by_desired_percentage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Calcular o valor de um novo ativo baseado num porcentual"
-        android:padding="10dp"
+        android:layout_marginTop="32dp"
         android:layout_marginHorizontal="10dp"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_weight_by_value"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Calcular a representatividade de um novo ativo através do seu valor"
-        android:padding="10dp"
+        android:layout_marginTop="32dp"
         android:layout_marginHorizontal="10dp"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_diferencial_value"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Calcular o valor faltante para atingir determinado percentual"
-        android:padding="10dp"
+        android:layout_marginTop="32dp"
         android:layout_marginHorizontal="10dp"/>
 </LinearLayout>
